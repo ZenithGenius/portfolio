@@ -2,7 +2,7 @@
 
 ## :rocket: Demo
 
-You can visit the site at: [view website](https://marcosic.netlify.app/home/)
+You can visit the site at: [view website](https://joumessi-jason-portfolio.netlify.app/)
 
 ## :sparkles: Introduction
 
@@ -48,7 +48,6 @@ Architecture used in the project
 │   ├── environments/
 │   |    └── environment.*.ts
 │   └── styles/
-│        └── styles.css
 |   
 ├── angular.json
 ├── tailwind.config.mjs
