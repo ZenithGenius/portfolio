@@ -18,7 +18,7 @@ This is a web portfolio made in Angular, it is made to show my work and my skill
 The project is developed in Angular 18 and uses these technologies:
 
 <p user-select="none" align="left">
-   <a href="#" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=angular,ts,css,html,tailwind"/> </a>
+   <a href="#" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=angular,ts,css,html,python"/> </a>
 </p>
 
 ## 🚀 Project Structure
