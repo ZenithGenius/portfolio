@@ -1,0 +1,19 @@
+<bento-item className="bento-item-2">
+  <h2
+    class="font-manrope bg-ml-text-white font-semibold text-[3rem] pl-[1rem] text-left bg-clip-text text-transparent"
+  >
+    Experience
+  </h2>
+
+  <div class="ps-4 pe-3 mt-4 overflow-auto flex flex-col h-full expirence-box">
+    @for (EXPIRENCE of EXPIRENCES; track EXPIRENCE.ID) {
+    <expirence-item
+      [title]="EXPIRENCE.COMPANY"
+      [sub]="EXPIRENCE.ROLE"
+      [date]="EXPIRENCE.TIME"
+    >
+      {{ EXPIRENCE.DESCRIPTION }}
+    </expirence-item>
+    }
+  </div>
+</bento-item>

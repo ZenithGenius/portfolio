@@ -1,0 +1,67 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 13px;
+  align-items: center;
+  justify-content: center;
+}
+app-textarea-field,
+app-input-field {
+  width: 100%;
+}
+
+.button-form {
+  background-color: rgba(185, 28, 28, 1);
+  width: 35%;
+  overflow: hidden;
+  outline: none;
+  border-radius: 1.2rem;
+  font-weight: 500;
+  height: 45px;
+  padding-block: 0;
+}
+
+.button-form:disabled {
+  background-color: rgb(180, 51, 51);
+}
+
+.button-form:not(:disabled):hover {
+  background-color: rgba(153, 27, 27, 1);
+}
+.button-form:not(:disabled):active {
+  background-color: rgba(127, 29, 29, 1);
+}
+
+@media only screen and (min-width: 480px) {
+  app-textarea-field,
+  app-input-field {
+    width: fit-contnent;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .form .button-form {
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  app-textarea-field,
+  app-input-field {
+    width: 100%;
+  }
+  .button-form {
+    width: 40%;
+  }
+  .form {
+    align-items: flex-start;
+  }
+}
+
+@media only screen and (min-width: 1580px) {
+  .button-form {
+    font-size: 1.8rem;
+
+    width: 16rem;
+  }
+}

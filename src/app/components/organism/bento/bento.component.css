@@ -1,0 +1,292 @@
+.bento {
+  --bento-w: 92%;
+  --bento-h: auto;
+  --bento-min-w: 1534px;
+
+  --bento-w-col-1: 100%;
+  --bento-min-w-col-1: 100px;
+  --bento-max-w-col-1: none;
+
+  --bento-w-col-2: 98%;
+  --bento-min-w-col-2: 0%;
+  --bento-max-w-col-2: none;
+  --bento-mx: auto;
+
+  --bento-w-col-3: 400px;
+}
+.bento {
+  display: grid;
+  width: var(--bento-w);
+  height: var(--bento-h);
+  max-width: var(--bento-min-w);
+
+  grid-column-gap: 15px;
+  grid-row-gap: 22px;
+  margin-block-end: 3rem;
+  margin-block-start: 1.5rem;
+  justify-content: center;
+
+  grid-template:
+    "devProfile        devProfile  devProfile"
+    "devProfile        devProfile  devProfile"
+    "yearsExpirence    yearsExpirence     yearsExpirence"
+    "whoIam            whoIam      whoIam"
+    "whoIam            whoIam      whoIam"
+    "devStack          devStack    devStack"
+    "devStack          devStack    devStack"
+    "developmentAreas  developmentAreas developmentAreas"
+    "morePorjects  morePorjects morePorjects"
+    "letsWork  letsWork letsWork";
+}
+
+::ng-deep bento-item {
+  height: -webkit-fill-available;
+  width: 100%;
+  display: flow-root;
+}
+
+bento-center-deco {
+  display: none;
+}
+
+bento-item-contact {
+  grid-area: letsWork;
+  display: flex;
+  box-sizing: border-box;
+  height: 100%;
+  width: var(--bento-w-col-2);
+  max-width: var(--bento-max-w-col-2);
+  margin-inline: var(--bento-mx);
+}
+
+bento-item-expertice {
+  grid-area: yearsExpirence;
+  display: flex;
+  box-sizing: border-box;
+  height: 200px;
+  width: var(--bento-w-col-2);
+  min-width: var(--bento-min-w-col-2);
+  max-width: var(--bento-max-w-col-2);
+  margin-inline: var(--bento-mx);
+}
+bento-item-expirence {
+  grid-area: devStack;
+  display: flex;
+  box-sizing: border-box;
+  height: 355px;
+  width: var(--bento-w-col-2);
+  max-width: var(--bento-max-w-col-2);
+  min-width: var(--bento-min-w-col-2);
+  margin-inline: var(--bento-mx);
+}
+
+bento-item-profile {
+  container: bentoItemProfile / inline-size;
+  grid-area: devProfile;
+  display: flex;
+  box-sizing: border-box;
+  height: fit-content;
+  min-height: 315px;
+  width: var(--bento-w-col-2);
+  min-width: var(--bento-min-w-col-2);
+  max-width: var(--bento-max-w-col-2);
+  margin-inline: var(--bento-mx);
+}
+
+bento-item-whoiam {
+  grid-area: whoIam;
+  display: flex;
+  box-sizing: border-box;
+  width: var(--bento-w-col-2);
+  min-width: var(--bento-min-w-col-2);
+  max-width: var(--bento-max-w-col-2);
+  height: 315px;
+  margin-inline: var(--bento-mx);
+}
+bento-item-github {
+  grid-area: morePorjects;
+  display: flex;
+  box-sizing: border-box;
+  height: 225px;
+  width: var(--bento-w-col-2);
+  max-width: var(--bento-max-w-col-2);
+  margin-inline: var(--bento-mx);
+}
+bento-item-stack {
+  grid-area: developmentAreas;
+  display: flex;
+  box-sizing: border-box;
+  width: var(--bento-w-col-2);
+  max-width: var(--bento-max-w-col-2);
+  min-width: var(--bento-min-w-col-2);
+  margin-inline: var(--bento-mx);
+  min-height: 186px;
+  height: 225px;
+}
+
+@media only screen and (min-width: 550px) {
+  .bento {
+    --bento-w-col-2: 100%;
+    --bento-min-w-col-2: 300px;
+    --bento-mx: 0px;
+    grid-template:
+      "devProfile        devProfile  devProfile"
+      "devProfile        devProfile  devProfile"
+      "yearsExpirence    yearsExpirence     logoIam"
+      "whoIam            whoIam      whoIam"
+      "whoIam            whoIam      whoIam"
+      "devStack          devStack    devStack"
+      "devStack          devStack    devStack"
+      "developmentAreas  developmentAreas developmentAreas"
+      "morePorjects  morePorjects morePorjects"
+      "letsWork  letsWork letsWork";
+  }
+  bento-item-whoiam {
+    height: 290px;
+  }
+  bento-item-stack {
+    width: var(--bento-w-col-1);
+    max-width: var(--bento-max-w-col-1);
+    min-width: var(--bento-min-w-col-1);
+  }
+  bento-item-expirence {
+    width: var(--bento-w-col-1);
+    max-width: var(--bento-max-w-col-1);
+    min-width: var(--bento-min-w-col-1);
+  }
+  bento-center-deco {
+    grid-area: logoIam;
+    box-sizing: border-box;
+    display: flex;
+    width: var(--bento-w-col-2);
+    min-width: 215px;
+
+    height: 100%;
+    margin-inline: var(--bento-mx);
+  }
+  bento-item-expertice {
+    max-width: none;
+    min-width: 240px;
+    width: var(--bento-w-col-1);
+  }
+}
+
+@media only screen and (min-width: 840px) {
+  .bento {
+    grid-column-gap: 30px;
+    grid-row-gap: 25px;
+    grid-template:
+      "yearsExpirence   devProfile"
+      "yearsExpirence   devProfile"
+      "devStack         devProfile"
+      "devStack         logoIam"
+      "devStack         whoIam"
+      "devStack         whoIam"
+      "devStack         whoIam"
+      "developmentAreas morePorjects"
+      "letsWork         letsWork";
+  }
+
+  bento-center-deco {
+    min-width: var(--bento-min-w-col-2);
+    max-width: var(--bento-max-w-col-2);
+  }
+  bento-item-contact {
+    height: 203px;
+  }
+  bento-item-expertice {
+    max-width: var(--bento-max-w-col-1);
+    min-width: var(--bento-min-w-col-1);
+  }
+  bento-item-expirence {
+    height: 42.8rem;
+  }
+  bento-item-github {
+    height: 100%;
+  }
+  bento-item-profile {
+    height: 100%;
+  }
+  bento-item-whoiam {
+    height: 100%;
+  }
+  bento-item-stack {
+    height: 100%;
+  }
+}
+
+@media only screen and (min-width: 1225px) {
+  .bento {
+    --bento-w-col-1: 430px;
+  }
+  bento-item-contact {
+    height: 100%;
+  }
+}
+@media only screen and (min-width: 1135px) {
+  .bento {
+    grid-template:
+      "yearsExpirence   devProfile devProfile"
+      "yearsExpirence   devProfile devProfile"
+      "devStack         devProfile devProfile"
+      "devStack         logoIam logoIam"
+      "devStack         whoIam whoIam"
+      "devStack         whoIam whoIam"
+      "devStack         whoIam whoIam"
+      "developmentAreas morePorjects morePorjects"
+      "developmentAreas letsWork letsWork";
+  }
+}
+
+@media only screen and (min-width: 1480px) {
+  .bento {
+    --bento-w-col-1: 292px;
+    --bento-min-w-col-2: 625px;
+    --bento-max-w-col-2: 700px;
+    grid-template:
+      "yearsExpirence  devProfile   morePorjects "
+      "yearsExpirence  devProfile   morePorjects "
+      "devStack        devProfile   developmentAreas "
+      "devStack        logoIam      developmentAreas "
+      "devStack        whoIam       developmentAreas "
+      "devStack        whoIam       letsWork "
+      "devStack        whoIam       letsWork ";
+  }
+
+  bento-center-deco {
+    height: 135px;
+  }
+  bento-item-contact {
+    width: var(--bento-w-col-3);
+    max-width: none;
+  }
+  bento-item-expertice {
+    height: 100%;
+  }
+  bento-item-expirence {
+    height: clamp(520px, 20cqw, 400px);
+  }
+  bento-item-github {
+    width: var(--bento-w-col-3);
+    max-width: none;
+  }
+  bento-item-profile {
+    height: 290px;
+  }
+  bento-item-stack {
+    width: var(--bento-w-col-3);
+    max-width: none;
+  }
+  bento-item-whoiam {
+    height: 240px;
+  }
+}
+
+@media only screen and (min-width: 1700px) {
+  .bento {
+    --bento-w-col-1: 305px;
+    --bento-min-w-col-2: 810px;
+    --bento-max-w-col-2: none;
+    --bento-w-col-3: 430px;
+  }
+}

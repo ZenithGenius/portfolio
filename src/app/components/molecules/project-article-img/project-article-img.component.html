@@ -1,0 +1,30 @@
+<div class="project-img relative">
+  <a
+    [href]="REPO()"
+    target="_blank"
+    [title]="TITLE()"
+    class="link-to-repo cursor-pointer z-20 outline-none focus:outline-none"
+    (mousemove)="onMouseMove($event)"
+    #projectImg
+  >
+    <!-- Container for atropos -->
+    <div class="atropos project-atropos-content" useAtropos>
+      <div class="atropos-scale">
+        <div class="atropos-rotate">
+          <div class="atropos-inner">
+            <div
+              class="img-container"
+              [style.background-image]="'url(' + SRC() + ')'"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </a>
+  <app-tool-tip [x]="tooltipX" [y]="tooltipY">Go to repository</app-tool-tip>
+
+  <!-- TAGS for project -->
+  <div class="flex flex-nowrap gap-x-4 absolute left-[5%] bottom-[1.75%]">
+    <ng-content></ng-content>
+  </div>
+</div>

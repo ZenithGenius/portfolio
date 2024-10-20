@@ -1,0 +1,52 @@
+::ng-deep .bento-item-4 {
+  display: flex;
+  --visible: none;
+  --logo-w: 165px;
+}
+
+::ng-deep .bento-item-4 ::ng-deep #normal-plant {
+  position: absolute;
+  bottom: 1px;
+  left: -8px;
+}
+::ng-deep .bento-item-4 ::ng-deep #reverse-plant {
+  position: absolute;
+  bottom: 1px;
+  right: -8px;
+}
+::ng-deep .bento-item-4 ::ng-deep #dev-productivity {
+  display: var(--visible);
+  position: absolute;
+  top: -12px;
+  left: 28px;
+}
+::ng-deep .bento-item-4 ::ng-deep #dev-pull-req {
+  display: var(--visible);
+  position: absolute;
+  bottom: -1%;
+  right: 10%;
+}
+
+::ng-deep .bento-item-4 logoicon {
+  width: 100%;
+  display: flex !important;
+  flex: 1 1;
+  justify-content: center;
+  align-items: center;
+}
+::ng-deep .bento-item-4 ::ng-deep img {
+  width: var(--logo-w);
+}
+
+@media only screen and (min-width: 840px) {
+  ::ng-deep .bento-item-4 {
+    --visible: block;
+    --logo-w: 140px;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  ::ng-deep .bento-item-4 ::ng-deep #dev-pull-req {
+    right: 100px;
+  }
+}

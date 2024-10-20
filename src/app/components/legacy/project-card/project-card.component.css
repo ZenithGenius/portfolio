@@ -1,0 +1,78 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1;
+  border-radius: 12px;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  padding: 5px;
+
+  background: -webkit-linear-gradient(
+    286deg,
+    #481aaf 50%,
+    rgb(139 139 139 / 0%) 110%
+  );
+
+  background: linear-gradient(286deg, #481aaf 50%, rgb(139 139 139 / 0%) 110%);
+}
+
+.project-info {
+  padding: 0 10px;
+  padding-top: 0px;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-shrink: 1;
+  height: 100%;
+}
+
+@media screen and (min-width: 360px) {
+  .projects-container {
+    aspect-ratio: 5/4.9;
+  }
+}
+
+@media screen and (min-width: 550px) {
+  .projects-container {
+    aspect-ratio: 5/3.75;
+  }
+}
+@media screen and (min-width: 836px) {
+  .projects-container {
+    aspect-ratio: 5/4.75;
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  .card {
+    aspect-ratio: 5/3.2;
+  }
+}
+@media screen and (min-width: 1306px) {
+  .card {
+    aspect-ratio: 5/4.25;
+  }
+}
+
+@media screen and (min-width: 1351px) {
+  .card {
+    aspect-ratio: 5/4;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .card {
+    aspect-ratio: 5/3.25;
+  }
+}
+
+@media only screen and (min-width: 1780px) {
+  .card {
+    aspect-ratio: 5/3.5;
+  }
+}

@@ -1,0 +1,30 @@
+::ng-deep .bento-item-2 {
+  overflow: hidden;
+}
+
+.expirence-box {
+  padding-block-end: 90px;
+}
+
+.expirence-box::-webkit-scrollbar {
+  width: 12px;
+  background-color: transparent;
+}
+
+.expirence-box::-webkit-scrollbar-thumb {
+  background-color: #7517c0c2;
+  border-radius: 6px;
+}
+
+.expirence-box::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.expirence-box::-webkit-scrollbar-button {
+  display: none;
+}
+
+.expirence-box {
+  scrollbar-width: thin;
+  scrollbar-color: #7517c0c2 transparent;
+}

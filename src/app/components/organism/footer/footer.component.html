@@ -1,0 +1,161 @@
+<footer class="flex flex-col mt-4 pt-8 pb-0 overflow-wrap break-all">
+  <div class="footer-bg -mt-[1px]">
+    <svg data-name="Layer 1" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path
+        d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+        class="shape-fill"
+      ></path>
+    </svg>
+  </div>
+
+  <div
+    class="flex flex-col pb-4 min-[1080px]:flex-row pt-4 min-[1080px]:pt-[100px]"
+  >
+    <div
+      class="flex flex-col gap-x-4 mb-6 flex-[.75] items-center justify-center min-[1080px]:mb-0 min-[1080px]:flex-row"
+    >
+      <LogoIcon />
+      <h2
+        class="bg-ml-text-white bg-clip-text !text-transparent fill-transparent text-[2rem] font-semibold -mt-[10px] min-[1080px]:mt-0"
+      >
+        Benny Joumessi Jason
+      </h2>
+    </div>
+
+    <div
+      class="flex flex-col flex-[.4] justify-start items-center mb-7 min-[1080px]:my-0"
+    >
+      <div>
+        <h3 class="font-bold text-[1.45rem]">Navigation</h3>
+        <ul class="flex flex-col gap-y-1 mt-2" role="list">
+          <li role="listitem" aria-label="Go to hero">
+            <router-link fragment="hero" classNames="foot-navigation">
+              Hero
+            </router-link>
+          </li>
+          <li role="listitem" aria-label="Go to Projects">
+            <router-link fragment="projects" classNames="foot-navigation">
+              Projects
+            </router-link>
+          </li>
+          <li>
+            <router-link fragment="about" classNames="foot-navigation">
+              About
+            </router-link>
+          </li>
+          <li role="listitem" aria-label="Go to Contact">
+            <router-link fragment="contact" classNames="foot-navigation">
+              Contact
+            </router-link>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div
+      class="flex-1 flex flex-col-reverse justify-center items-center gap-y-6 text-[1rem]"
+    >
+      <div class="flex w-full justify-center pb-4">
+        <ul
+          class="flex flex-col gap-y-4"
+          role="list"
+          aria-label="Contact information"
+        >
+          <li
+            class="flex relative gap-x-4"
+            role="listitem"
+            aria-label="Address"
+          >
+            <svg
+              class="w-6 h-6 min-[1500px]:w-8 min-[1500px]:h-8"
+              role="complementary"
+              aria-disabled="true"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
+              ></path>
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
+              ></path>
+            </svg>
+            Cameroon, Yaounde, Biyemassi
+          </li>
+          <li class="flex relative gap-x-4" role="listitem" aria-label="Email">
+            <svg
+              class="w-6 h-6 min-[1500px]:w-7 min-[1500px]:h-7"
+              role="complementary"
+              aria-disabled="true"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+              ></path>
+            </svg>
+            <img
+              src="../../../../assets/email.svg"
+              role="img"
+              aria-describedby="email"
+              aria-label="Email in image format, for security"
+              class="min-[1500px]:w-[18]"
+              alt="Benny Jason Email"
+            />
+          </li>
+        </ul>
+      </div>
+      <div
+        class="flex flex-row gap-x-5 justify-center items-center relative mx-auto"
+      >
+        <social-button
+          socialUri="https://www.linkedin.com/in/benny-jason"
+          title="Button to linkedIn profile"
+          className="bg-[#0A66C2] fill-white p-[8px]"
+        >
+          <LinkedinIcon />
+        </social-button>
+
+        <social-button
+          socialUri="https://github.com/ZenithGenius"
+          title="Button to github profile"
+          className="bg-[#00000085] fill-white p-[4px]"
+        >
+          <GithubIcon />
+        </social-button>
+
+        <social-button
+          socialUri="mailto:joumessiisaac@gmail.com?subject=Hey%Jason%20how%20are%20you"
+          title="Button for send email"
+          className="bg-[#fff] p-[4px]"
+        >
+          <GmailIcon />
+        </social-button>
+
+        <social-button
+          socialUri="https://drive.google.com/file/d/1znfQJffUhuawHnsKnSUGa6aGtnA9q1OY/view?usp=sharing"
+          className="cv p-[4px] font-bold bg-[var(--ml-red-100)]"
+          title="Button to CV"
+        >
+          <CvIcon />
+        </social-button>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="w-full mt-auto flex mx-auto justify-center item-center gap-x-3 pt-[1rem] pb-1 text-[60%]"
+  >
+    <CoffeeIcon /><small>Developed by Benny Joumessi Jason - Last update 2024</small>
+  </div>
+</footer>

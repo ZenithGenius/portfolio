@@ -1,0 +1,18 @@
+<figure class="project-card-container">
+  <div class="brightness brightness-1"></div>
+  <project-article-img
+    [REPO]="PROJECT().REPOSITORY"
+    [SRC]="PROJECT().IMG"
+    [TITLE]="PROJECT().NAME"
+    [ID]="PROJECT().ID"
+  >
+    <ng-content></ng-content>
+  </project-article-img>
+
+  <figcaption class="project-caption">
+    <h3 class="bg-clip-text !text-transparent fill-transparent">
+      {{ PROJECT().NAME }}
+    </h3>
+    <p>{{ PROJECT().DESC }}</p>
+  </figcaption>
+</figure>

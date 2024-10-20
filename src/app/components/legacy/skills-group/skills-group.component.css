@@ -1,0 +1,22 @@
+    .skill-group{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 1.5rem;
+        margin-block-start: 1.75rem;
+    }
+
+    .skills{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        flex-grow: 1;
+    }
+
+@media screen and (min-width: 1580px){
+    .skill-group{
+        gap: 4rem;
+    }
+}

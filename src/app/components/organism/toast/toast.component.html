@@ -1,0 +1,78 @@
+<div class="toast-list" [ngClass]="toasts().position" aria-live="assertive">
+  @for(toast of toasts().toasts; track toast?.ID){ @if(toast.visible) {
+  <article
+    class="toast"
+    role="alert"
+    [id]="toast.ID"
+    aria-label="Process notification of any application"
+    [ngClass]="
+      TOAST_TYPE.has(toast.type)
+        ? TOAST_TYPE.get(toast.type)
+        : TOAST_TYPE.get(TOAST_DEFAULT)
+    "
+  >
+    <div class="toast-wrapper">
+      <div class="bar" aria-disabled="true" role="complementary"></div>
+
+      <div class="icon-wrpapper">
+        @switch(toast.type){ @case ("info") {
+        <svg width="20" height="20" fill="none">
+          <circle cx="10" cy="10" r="10" fill="#3C58BA" />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M9.993 3.333A6.663 6.663 0 0 0 3.333 10c0 3.68 2.98 6.667 6.66 6.667A6.67 6.67 0 0 0 16.667 10a6.67 6.67 0 0 0-6.674-6.667zm.007 12A5.332 5.332 0 0 1 4.667 10 5.332 5.332 0 0 1 10 4.667 5.332 5.332 0 0 1 15.333 10 5.332 5.332 0 0 1 10 15.333zm-.667-4.62 3.66 2.194.68-1.147-3.006-1.807V6.28H9.333v4.433z"
+            fill="#FFFFFC"
+          />
+        </svg>
+        } @case ("success") {
+        <svg width="20" height="20" fill="none">
+          <circle cx="10" cy="10" r="10" fill="#069150" />
+          <path
+            d="M8 13.127 5.22 10l-.947 1.057L8 15.25l8-9-.94-1.058L8 13.127z"
+            fill="#FFFFFC"
+          />
+        </svg>
+        } @case ("warning") {
+        <svg width="20" height="20" fill="none">
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M10 0C4.48 0 0 4.48 0 10s4.48 10 10 10 10-4.48 10-10S15.52 0 10 0zM9 15v-2h2v2H9zM9 5v6h2V5H9z"
+            fill="#BA703C"
+          />
+        </svg>
+        } @case ("error") {
+        <svg width="20" height="20" fill="none">
+          <circle cx="10" cy="10" r="10" fill="#D93025" />
+          <path
+            d="m15.2 5.342-1.128-1.175L9.6 8.825 5.128 4.167 4 5.342 8.472 10 4 14.658l1.128 1.175L9.6 11.175l4.472 4.658 1.128-1.175L10.728 10 15.2 5.342z"
+            fill="#FFFFFC"
+          />
+        </svg>
+        } }
+      </div>
+      <h4 class="title" role="text" aria-label="Notification title.">
+        {{ toast.title }}
+      </h4>
+      <p class="message" role="text" aria-label="Notification message.">
+        {{ toast.message }}
+      </p>
+
+      <button
+        class="btn-close"
+        role="button"
+        aria-disabled="false"
+        aria-label="Button to close notification modal."
+        (click)="close(toast.ID)"
+      >
+        <img
+          ngSrc="../../../../assets/utils/close.webp"
+          fill
+          alt="Close Icon"
+        />
+      </button>
+    </div>
+  </article>
+  } }
+</div>

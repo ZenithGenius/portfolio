@@ -1,0 +1,33 @@
+custom-link::ng-deep .social-link {
+  width: fit-content;
+  display: inline-block;
+  object-fit: cover;
+  transition-property: transform, filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  position: relative;
+}
+
+custom-link::ng-deep .social-link:hover {
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 0 #0000, 0 0 #0000,
+    0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  transform: translate(0, -4px) rotate(0) skewX(0) skewY(0) scaleX(1.1)
+    scaleY(1.1);
+  filter: contrast(1.25);
+}
+
+div.icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+}
+
+div.icon ::ng-deep svg {
+  width: 29px;
+  height: 29px;
+  min-width: 29px;
+  min-height: 29px;
+  top: 50% !important;
+  left: 50% !important;
+  translate: -50% -55%;
+}

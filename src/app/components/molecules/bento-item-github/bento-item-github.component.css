@@ -1,0 +1,87 @@
+::ng-deep .bento-item-6 {
+  padding: 1rem;
+  padding-inline-start: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  --text-size: 1rem;
+  --text-max-w: none;
+  --title-size: clamp(1.5rem, 10dvw, 2.5rem);
+  --github-btn-mt: auto;
+  --github-btn-text-max-w: 170px;
+  --github-btn-text: 1rem;
+  --github-btn-w: 90%;
+  --github-btn-h: 25%;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: var(--title-size);
+  margin-block-end: 0.2rem;
+}
+
+p {
+  font-size: var(--text-size);
+  max-width: var(--text-max-w);
+  letter-spacing: 0.3px;
+  word-spacing: 0.5px;
+}
+
+.github-btn {
+  display: flex;
+  column-gap: 10px;
+  width: var(--github-btn-w);
+  height: var(--github-btn-h);
+  background: linear-gradient(
+    88.61deg,
+    rgba(12, 11, 11, 0.79) 8.26%,
+    #000000 99.14%
+  );
+  border-radius: 20px;
+  margin-block-start: var(--github-btn-mt);
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: var(--github-btn-text);
+  line-height: 20px;
+  color: #ffffff;
+
+  span {
+    max-width: var(--github-btn-text-max-w);
+  }
+}
+
+@media only screen and (min-width: 450px) {
+  ::ng-deep .bento-item-6 {
+    --title-size: 3rem;
+    --github-btn-text: 1.3rem;
+    --github-btn-w: 85%;
+    --github-btn-h: 52px;
+  }
+}
+
+@media only screen and (min-width: 840px) {
+  ::ng-deep .bento-item-6 {
+    --github-btn-text: 1.115rem;
+    --github-btn-w: 50%;
+    --github-btn-h: 42px;
+  }
+}
+
+@media only screen and (min-width: 1135px) {
+  ::ng-deep .bento-item-6 {
+    --github-btn-w: 260px;
+    --github-btn-text: 1.175rem;
+    --github-btn-text-max-w: 135px;
+  }
+}
+
+@media only screen and (min-width: 1480px) {
+  ::ng-deep .bento-item-6 {
+    --github-btn-text: 1rem;
+    --text-max-w: 190px;
+    --github-btn-w: 168px;
+    --github-btn-h: 42px;
+    --github-btn-text-max-w: 150px;
+  }
+}

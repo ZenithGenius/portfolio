@@ -1,0 +1,31 @@
+<section class="container-sections">
+  <app-title
+    class="w-full"
+    data-aos="fade-up"
+    data-aos-duration="600"
+    [titleID]="titleID"
+    [name]="SERVICES.TITLE_COMPLETE"
+  >
+    <span class="bg-ml-text-red bg-clip-text text-transparent">{{
+      SERVICES.TITLE[0]
+    }}</span>
+    {{ SERVICES.TITLE[1] }}
+  </app-title>
+
+  <div class="ourService-container">
+    <service-card
+      class="service-card"
+      data-aos="zoom-in"
+      data-aos-duration="700"
+      *ngFor="
+        let service of SERVICES.SERVICES;
+        let i = index;
+        trackBy: trackByFn
+      "
+      [index]="i"
+      [icon]="service.ICON"
+      [title]="service.TITLE"
+    >
+    </service-card>
+  </div>
+</section>

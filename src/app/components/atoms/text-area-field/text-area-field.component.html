@@ -1,0 +1,22 @@
+<div
+  class="relative h-[214px] w-[90%] max-[1080px]:mx-auto min-[480px]:w-[450px] min-[1080px]:w-full max-w-[450px] min-[1480px]:h-[250px] min-[1480px]:max-w-[85%]"
+>
+  <textarea
+    [name]="name()"
+    [id]="id()"
+    [formControl]="fieldControl"
+    role="textbox"
+    [attr.aria-label]="aria()"
+    autocapitalize="none"
+    placeholder=" "
+    [cols]="cols()"
+    [rows]="rows()"
+  ></textarea>
+  <label [for]="id()">{{ label() }}</label>
+  @if(showError){
+  <error-message
+    errorClass="text-[#e12a2a] items-center font-semibold text-center"
+    [errorMessage]="errorMessage()"
+  ></error-message>
+  }
+</div>

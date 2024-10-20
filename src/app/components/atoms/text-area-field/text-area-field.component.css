@@ -1,0 +1,46 @@
+textarea {
+  background: rgba(253, 253, 253, 0);
+  outline: none;
+  border: 1px solid rgba(255, 0, 0, 0);
+  border-radius: 0.5rem;
+  padding: 10px;
+  width: 100%;
+  display: block;
+  color: rgb(207, 207, 207);
+  font-weight: 400;
+  font-size: 1em;
+  box-shadow: inset 4px 4px 4px rgb(35 0 65 / 13%),
+    4px 4px 4px rgb(46 0 85 / 13%);
+  resize: none;
+  background: #4a127014;
+}
+
+textarea:focus + label,
+textarea.ng-valid + label,
+textarea.ng-invalid:not(:placeholder-shown) + label {
+  transform: translateY(-140%) scale(0.9);
+  left: 4%;
+}
+
+label {
+  position: absolute;
+  left: 5%;
+  top: 8%;
+  pointer-events: none;
+  color: rgb(238, 238, 238);
+  transition: all 0.4s;
+}
+
+@media only screen and (min-width: 1080px) {
+  textarea {
+    width: 85%;
+  }
+}
+@media only screen and (min-width: 1700px) {
+  textarea {
+    font-size: 1.25rem;
+  }
+  label {
+    font-size: 1.25rem;
+  }
+}

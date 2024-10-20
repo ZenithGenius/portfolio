@@ -1,0 +1,18 @@
+<section class="flex max-[1150px]:flex-col">
+  <div class="about-introduction">
+    <app-title
+      class="title w-full min-[1580px]:mt-24"
+      className="text-center md:text-left"
+      [titleID]="titleID"
+      [name]="INTRODUCTION.TITLE"
+    ></app-title>
+
+    <p class="text-center md:text-left mt-8 text-base">
+      {{ INTRODUCTION.PARAGRAPH }}
+    </p>
+  </div>
+
+  <picture class="about-introduction-img max-[1150px]:w-full min-[1150px]:ml-5">
+    <spaceSvg class="w-full"></spaceSvg>
+  </picture>
+</section>

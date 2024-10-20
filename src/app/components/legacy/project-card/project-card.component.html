@@ -1,0 +1,17 @@
+<article class="card">
+  <project-card-header
+    [IMG]="PROJECT.IMG"
+    [DEPLOY]="PROJECT.DEPLOY"
+  ></project-card-header>
+
+  <div class="project-info">
+    <project-card-body
+      [PROJECT_NAME]="PROJECT.NAME"
+      [TEXT_ANCHOR]="textAnchor"
+      [PROJECT_LINK]="PROJECT.DEPLOY"
+      [PROJECT_DESCRIPTION]="PROJECT.DESCRIPTION"
+    ></project-card-body>
+
+    <project-card-footer [TAGS]="PROJECT.TAGS"></project-card-footer>
+  </div>
+</article>

@@ -1,0 +1,32 @@
+.site-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+  margin-inline: 10px;
+
+  @media only screen and (min-width: 980px) {
+    & {
+      margin-inline: 6dvw;
+    }
+  }
+}
+
+.footer {
+  width: 100%;
+  font-weight: 500;
+  font-size: 1.75rem;
+  margin-block-start: auto;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 3;
+  container-type: inline-size;
+  container-name: main;
+}
+
+app-toast {
+  z-index: 99;
+  position: fixed;
+}

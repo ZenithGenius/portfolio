@@ -1,0 +1,21 @@
+<section #contact id="contact">
+  <app-title
+    class="w-fit mx-auto pb-6"
+    className="text-center"
+    [titleID]="titleID"
+    name="Contact me"
+    sub="Don't hesitate to send me a message for any inquiry or project"
+  >
+    Get in
+    <span class="bg-ml-text-red bg-clip-text text-transparent">touch</span>
+  </app-title>
+  <div class="contact relative">
+    <div class="left-content" data-aos="fade-right" data-aos-duration="400">
+      <contact-form (contactState)="handleFormSubmit($event)" />
+    </div>
+
+    <div class="right-content">
+      <liquid-banner />
+    </div>
+  </div>
+</section>

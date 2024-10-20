@@ -1,0 +1,267 @@
+::ng-deep .bento-item-7 {
+  flex-direction: column;
+  display: flex;
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  object-fit: cover;
+  object-position: center;
+  max-width: 14%;
+  transition-duration: 300ms;
+  transition-property: all;
+  transition-timing-function: ease-in;
+}
+
+.icon:hover {
+  filter: saturate(1.1) brightness(1.1) contrast(1.2)
+    drop-shadow(1px 4px 4px rgba(0, 0, 0, 0.3));
+}
+
+.stack-6 {
+  right: 9.5%;
+  bottom: 3%;
+}
+
+.stack-1 {
+  left: 5%;
+  top: 38%;
+}
+.stack-2 {
+  left: 18%;
+  bottom: 9%;
+}
+.stack-3 {
+  left: 30%;
+  top: 32%;
+}
+.stack-7 {
+  right: 46%;
+  top: 63%;
+}
+.stack-5 {
+  left: 50%;
+  top: 20%;
+  display: none;
+}
+.stack-8 {
+  bottom: 19%;
+  left: 60%;
+}
+.stack-4 {
+  left: 70%;
+  bottom: 68%;
+}
+.stack-9 {
+  bottom: 37%;
+  right: 7%;
+}
+
+@media only screen and (min-width: 480px) {
+  .icon {
+    max-width: 12%;
+  }
+  .stack-5 {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 580px) {
+  .icon {
+    max-width: none;
+  }
+  .stack-6 {
+    right: 9.5%;
+    bottom: 2%;
+  }
+
+  .stack-1 {
+    left: 2%;
+    top: 33%;
+  }
+  .stack-2 {
+    bottom: 2%;
+  }
+  .stack-3 {
+    left: 29%;
+    top: 18%;
+  }
+  .stack-7 {
+    right: 49%;
+    top: 54%;
+  }
+  .stack-5 {
+    left: 47.75%;
+    top: 16%;
+  }
+  .stack-8 {
+    bottom: 10%;
+    left: 56%;
+  }
+  .stack-4 {
+    left: 67%;
+    bottom: 60%;
+  }
+  .stack-9 {
+    bottom: 39%;
+    right: 2.5%;
+  }
+}
+
+@media only screen and (min-width: 840px) {
+  .icon {
+    max-width: 27%;
+  }
+  .stack-1 {
+    left: 4.5%;
+    top: 40%;
+  }
+  .stack-2 {
+    left: 37%;
+    bottom: 1.75%;
+  }
+  .stack-3 {
+    left: 62%;
+    top: 15%;
+  }
+  .stack-6 {
+    right: 3%;
+    bottom: -1%;
+  }
+  .stack-7,
+  .stack-5,
+  .stack-8,
+  .stack-4,
+  .stack-9 {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1135px) {
+  .icon {
+    max-width: none;
+  }
+  .stack-5,
+  .stack-9,
+  .stack-4,
+  .stack-7 {
+    display: block;
+  }
+  .stack-9 {
+    bottom: 32%;
+    right: 5%;
+  }
+  .stack-4 {
+    left: 43%;
+    bottom: 18%;
+  }
+  .stack-8 {
+    bottom: 35%;
+    left: 21%;
+  }
+  .stack-7 {
+    top: 50%;
+    right: 65%;
+  }
+  .stack-5 {
+    left: 67%;
+    top: 13%;
+  }
+  .stack-1 {
+    left: 4%;
+    top: 21%;
+  }
+  .stack-2 {
+    left: 6%;
+    bottom: 4%;
+  }
+  .stack-3 {
+    left: 42%;
+    top: 33%;
+  }
+  .stack-6 {
+    right: 6%;
+    bottom: 0%;
+  }
+}
+
+@media only screen and (min-width: 1225px) {
+  .stack-2 {
+    left: 10%;
+    bottom: 10%;
+  }
+  .stack-6 {
+    right: 7%;
+    bottom: 5%;
+  }
+  .stack-3 {
+    left: 43%;
+    top: 12%;
+  }
+  .stack-4 {
+    left: 46%;
+    bottom: 15%;
+  }
+  .stack-7 {
+    top: 35%;
+    right: 31%;
+  }
+  .stack-9 {
+    bottom: 30%;
+  }
+  .stack-5 {
+    left: 78%;
+    top: 14%;
+  }
+  .stack-8 {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 1480px) {
+  .stack-7,
+  .stack-8,
+  .stack-9 {
+    display: none;
+  }
+  .stack-1 {
+    left: 5%;
+    top: 30%;
+  }
+  .stack-2 {
+    left: 18%;
+    bottom: 7%;
+  }
+  .stack-3 {
+    left: 40%;
+    top: 24%;
+  }
+  .stack-5 {
+    left: 72%;
+    top: 30%;
+  }
+  .stack-6 {
+    right: 6%;
+    bottom: 7%;
+  }
+  .stack-4 {
+    left: 48%;
+    bottom: 16%;
+  }
+}
+
+@media only screen and (min-width: 1700px) {
+  .stack-4 {
+    left: 52%;
+  }
+  .stack-2 {
+    left: 20%;
+  }
+  .stack-3 {
+    left: 39%;
+  }
+  .stack-5 {
+    left: 70%;
+  }
+}

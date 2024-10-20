@@ -1,0 +1,164 @@
+.time-element-container {
+  padding: 10px 50px;
+  position: relative;
+  margin-bottom: 40px;
+  width: 100%;
+  padding-left: 65px;
+  padding-right: 13px;
+}
+
+.text-box {
+  padding: 20px 20px;
+  background: linear-gradient(
+    162deg,
+    rgba(40, 8, 94, 1) 40%,
+    rgba(20, 0, 48, 1) 91%
+  );
+  position: relative;
+  border-radius: 6px;
+  font-size: 15px;
+  top: -36px;
+}
+
+.left-container {
+  left: 0;
+}
+
+.right-container {
+  left: 0px;
+}
+
+.time-element-container svg {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  right: -38px;
+  top: -8px;
+  z-index: 10;
+}
+
+.left-container svg,
+.right-container svg {
+  left: -7px;
+}
+
+.left-container-arrow,
+.right-container-arrow {
+  border-right: 15px solid #28085e;
+  border-left: 0;
+  left: -15px;
+}
+
+.left-container-arrow {
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 23px;
+  z-index: 1;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  right: -14px;
+}
+
+.right-container-arrow {
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 23px;
+  z-index: 1;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+
+.text-box small {
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 330px) {
+  .time-element-container {
+    padding: 10px 5px;
+    margin-bottom: 35px;
+    padding-left: 60px;
+    padding-right: 0px;
+  }
+  .text-box {
+    padding: 10px 5px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 680px) {
+  .text-box small {
+    margin-bottom: 0px;
+  }
+
+  .time-element-container {
+    padding: 10px 50px;
+    padding-left: 40px;
+    margin-bottom: 40px;
+    width: 50%;
+  }
+  .text-box {
+    padding: 20px 20px;
+  }
+  .right-container {
+    left: 50%;
+  }
+  .right-container svg {
+    left: -38px;
+  }
+  .left-container svg {
+    left: auto;
+  }
+
+  .left-container-arrow {
+    border-right: 0;
+    border-left: 15px solid #20054be8;
+    left: auto;
+  }
+  .right-container-arrow {
+    border-left: 0;
+    border-right: 15px solid #28085e;
+    left: -14px;
+  }
+}
+
+@media screen and (min-width: 1580px) {
+  .time-element-container {
+    width: 800px;
+  }
+
+  .text-box {
+    padding-block-end: 50px;
+  }
+
+  .text-box > h3 {
+    font-size: 2rem;
+    line-height: 4rem;
+  }
+
+  .text-box > small {
+    font-size: 1.2rem;
+  }
+  .text-box > p {
+    font-size: 1.5rem;
+  }
+  .right-container {
+  }
+
+  .left-container {
+    left: -200px;
+  }
+
+  .left-container svg {
+    width: 110px;
+    height: 110px;
+    right: -55px;
+  }
+
+  .right-container svg {
+    width: 110px;
+    height: 110px;
+    left: -53px;
+  }
+}

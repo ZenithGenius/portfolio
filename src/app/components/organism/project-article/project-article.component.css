@@ -1,0 +1,46 @@
+.brightness-1 {
+  width: 29rem;
+  height: 27rem;
+  top: 4%;
+  left: 7%;
+  border-radius: 13%;
+  background: rgb(91 49 165 / 40%);
+  filter: blur(50px);
+  z-index: 0;
+}
+
+.project-card-container {
+  position: relative;
+  width: fit-content;
+  height: 100%;
+  position: relative;
+  overflow: visible;
+}
+
+.project-caption {
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  background-image: var(--ml-text-white);
+}
+
+p {
+  opacity: 0.9;
+  font-size: 0.9rem;
+  line-height: 24px;
+  max-width: 542px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .project-card-container {
+    width: 100%;
+  }
+}

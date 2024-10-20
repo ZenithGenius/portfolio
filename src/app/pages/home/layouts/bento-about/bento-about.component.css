@@ -1,0 +1,17 @@
+section {
+  background: linear-gradient(90deg, transparent, #12032ee6, transparent);
+  padding-block-start: 19dvh;
+}
+
+bento-about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 0%;
+}
+
+@media only screen and (min-height: 500px) {
+  section {
+    padding-block-start: 13dvh;
+  }
+}

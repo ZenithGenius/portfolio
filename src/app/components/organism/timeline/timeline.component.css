@@ -1,0 +1,42 @@
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 50px auto;
+  box-sizing: border-box;
+}
+
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 95%;
+
+  background-color: #a066d5;
+
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 0 #0000, 0 0 #0000,
+    0 15px 15px 1px rgb(191 120 255 / 40%);
+
+  top: 0;
+  left: 50%;
+  margin-inline-start: -3px;
+
+  z-index: -1;
+}
+
+@media screen and (max-width: 680px) {
+  .timeline::after {
+    left: 31px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .timeline {
+    margin: 50px auto;
+  }
+}
+
+@media screen and (min-width: 1580px) {
+  .timeline::after {
+    width: 8px;
+  }
+}

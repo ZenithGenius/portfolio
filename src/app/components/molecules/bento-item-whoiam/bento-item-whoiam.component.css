@@ -1,0 +1,44 @@
+::ng-deep .bento-item-5 {
+  padding-inline-start: 30px;
+  padding-block-start: 10px;
+  overflow: hidden;
+  --text-max-w: 735px;
+  --text-p-end: 0px;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-block-end: 0.5rem;
+}
+
+p {
+  line-height: 30px;
+  font-size: 0.95rem;
+  max-width: var(--text-max-w);
+  padding-inline-end: 12px;
+  padding-block-end: var(--text-p-end);
+  overflow: auto;
+  max-height: 70%;
+}
+
+@media only screen and (min-width: 1020px) {
+  p {
+    font-size: 1.1rem;
+    max-height: none;
+  }
+}
+
+@media only screen and (min-width: 1020px) {
+  ::ng-deep .bento-item-5 {
+    --text-max-w: 810px;
+    --text-p-end: 8px;
+  }
+}
+
+@media only screen and (min-width: 1480px) {
+  ::ng-deep .bento-item-5 {
+    --text-max-w: 735px;
+    --text-p-end: 0px;
+  }
+}

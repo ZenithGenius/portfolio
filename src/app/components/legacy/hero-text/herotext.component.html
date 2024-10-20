@@ -1,0 +1,35 @@
+<section class="self-center flex flex-col">
+  <div class="heading">
+    <h1 class="main-title" [title]="HERO.TITLE_COMPLETE">
+      <span
+        class="max-[1500px]:max-h-[110px] bg-ml-text-white bg-clip-text text-transparent"
+        >{{ HERO.TITLE[0] }}</span
+      >
+      <span
+        class="max-[1500px]:max-h-[110px] bg-ml-text-red bg-clip-text text-transparent"
+        >{{ HERO.TITLE[1] }}</span
+      >
+    </h1>
+  </div>
+
+  <div
+    class="w-full my-1 flex items-center justify-center min-[1000px]:justify-start"
+  >
+    <h2 class="clarification">{{ HERO.SUBTITLE }}</h2>
+  </div>
+  <p class="home-paragraph">
+    {{ HERO.PARAGRAPH }}
+  </p>
+
+  <div class="flex justify-center lg:justify-start gap-x-6">
+    <button class="button button-resume-color">
+      <a [href]="USER.cv" target="_blank">
+        {{ HERO.RESUME }}
+      </a>
+    </button>
+
+    <button class="button button-contact-color" routerLink="/contact">
+      {{ HERO.CONTACT }}
+    </button>
+  </div>
+</section>

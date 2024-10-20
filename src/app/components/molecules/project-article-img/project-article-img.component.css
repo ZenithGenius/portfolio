@@ -1,0 +1,108 @@
+.project-img {
+  --project-img-w: 100%;
+  --project-img-h: 470px;
+  --container-img-w: 300px;
+  --container-img-h: 300px;
+
+  position: relative;
+  width: var(--project-img-w);
+  height: var(--project-img-h);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: radial-gradient(
+      50% 70.31% at 50% 0%,
+      rgb(35 0 74 / 40%) 0%,
+      rgb(126 61 255 / 0%) 100%
+    ),
+    rgb(49 28 87 / 5%);
+  -webkit-backdrop-filter: blur(8.5px);
+  backdrop-filter: blur(30px);
+  perspective: 1000px;
+  margin-block-end: 1rem;
+}
+
+.project-img::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 15px;
+  padding: 1px;
+  background: linear-gradient(
+      105.43deg,
+      rgba(168, 128, 255, 0) 25.1%,
+      rgba(168, 128, 255, 0.32) 72.57%,
+      rgba(168, 128, 255, 0) 102.57%
+    ),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+.img-container {
+  width: var(--container-img-w);
+  height: var(--container-img-h);
+  background-color: #fff;
+
+  margin-inline: auto;
+  border-radius: 0.5rem;
+
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+  vertical-align: middle;
+
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  background-position: left;
+  background-size: cover;
+}
+
+.project-img {
+  opacity: 0.85;
+  transition: opacity 100ms ease;
+}
+
+.project-atropos-content {
+  scale: 0.97;
+  transition: scale 300ms ease;
+}
+
+.project-img:hover {
+  opacity: 1;
+}
+
+.project-img:hover .project-atropos-content {
+  scale: 1;
+}
+
+.link-to-repo:has(:hover) + app-tool-tip ::ng-deep .custom-tooltip {
+  visibility: visible;
+  display: block;
+}
+
+@media only screen and (min-width: 420px) {
+  .project-img {
+    --project-img-h: 485px;
+    --container-img-w: 380px;
+    --container-img-h: 390px;
+  }
+}
+
+@media only screen and (min-width: 560px) {
+  .project-img {
+    --project-img-w: 533px;
+    --project-img-h: 500px;
+    --container-img-w: 400px;
+    --container-img-h: 400px;
+  }
+}

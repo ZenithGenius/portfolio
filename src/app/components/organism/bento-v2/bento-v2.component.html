@@ -1,0 +1,48 @@
+<div id="bento-v2" class="w-full h-full p-4 flex justify-center items-start">
+  <div class="max-w-[1280px] w-full mx-auto bento-v2">
+    <bento-item
+      id="about-me-V2"
+      className="p-4 sm:p-6 bento-v2-intro flex flex-col justify-center"
+    >
+      <div class="flex gap-x-[1rem]">
+        <rectangle-profile [src]="PROFILE.photo" alt="My photo" />
+
+        <div class="flex flex-col w-full">
+          <div
+            class="flex items-start gap-y-3 mb-2 min-[540px]:mb-0 flex-col min-[540px]:flex-row min-[540px]:justify-between min-[540px]:items-center"
+          >
+            <span class="space-in-text">
+              <pulse-element />
+              {{ PROFILE.isAvalaible ? "Available for work" : "Not available" }}
+            </span>
+            <a
+              href="cv"
+              target="_blank"
+              class="resume-download space-in-text cursor-pointer flex-row-reverse min-[540px]:flex-row pointer"
+            >
+              <span>Resume</span>
+              <DownloadIcon />
+            </a>
+          </div>
+          <h2 class="bg-clip-text text-transparent">Benny Joumessi Jason</h2>
+          <p>
+            Je suis Benny Jason Joumessi Isaac**, un passionné de cybersécurité et de hacking éthique, toujours à la recherche de défis qui me poussent à aller plus loin. Des audits de systèmes à la résolution de CTFs sur des plateformes comme TryHackMe et VulnHub, je me spécialise dans l'analyse des menaces, la construction d'infrastructures sécurisées et la prévention des vulnérabilités critiques. Avec une expérience dans le déploiement de systèmes de détection et de prévention des intrusions (IDPS) et la gestion de réseaux à haute densité, ma mission est de protéger ce que les autres tiennent pour acquis.
+
+            Je ne suis pas seulement un hacker éthique; je suis aussi un créateur. J'aime intégrer l'intelligence artificielle dans des projets innovants, comme des drones automatisés ou des processus de recyclage autonomes. De Python à Linux, je maîtrise le développement backend et l'automatisation, et dans chaque projet, je cherche à apprendre quelque chose de nouveau et à repousser les limites.
+
+            Si quelque chose me définit, c'est ma capacité à résoudre des problèmes complexes tout en gardant le sourire. Je suis un travailleur infatigable qui croit que le savoir n'est jamais suffisant et qu'il y a toujours une nouvelle vulnérabilité à découvrir. Vous voulez en savoir plus ? Accrochez-vous, car ce qui vient sera grand !
+          </p>
+        </div>
+
+        <!-- <AstronautIcon />  -->
+      </div>
+    </bento-item>
+
+    <bento-item id="stats">B</bento-item>
+    <bento-item id="skills">C</bento-item>
+    <bento-item id="featured-p">D</bento-item>
+    <bento-item id="latest-p">E</bento-item>
+    <bento-item id="work-experience">F</bento-item>
+    <bento-item id="explore-github">G</bento-item>
+  </div>
+</div>

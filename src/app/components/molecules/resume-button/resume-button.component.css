@@ -1,0 +1,28 @@
+.button-resume {
+  transition-property: color, transform, opacity;
+  transition-timing-function: ease;
+  transition-duration: 175ms;
+
+  padding: 0px;
+  color: var(--ml-white);
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    color: var(--ml-red-100);
+    scale: 1.05;
+
+    .arrow {
+      transform: rotate(-45deg) scale(1.2) translateX(10%) translateY(-10%);
+    }
+  }
+}
+
+.arrow {
+  transition-property: color, transform, opacity;
+  transition-timing-function: ease;
+  transition-duration: 175ms;
+  margin-inline-start: 5px;
+
+  padding: 1px;
+}

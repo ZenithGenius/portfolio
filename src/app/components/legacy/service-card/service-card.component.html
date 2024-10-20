@@ -1,0 +1,16 @@
+  <div #serviceCard class="card-container" data-tilt data-tilt-reset-to-start="true" [ngClass]="{'mobile': this.isMobile}">
+
+    <figure class="card">
+   
+      <picture class="w-16 h-16 min-[1500px]:w-24 min-[1500px]:h-24 object-contain relative">
+        <img [ngSrc]="icon" fill alt="decorative icon" aria-hidden="true" itemprop="image" [attr.aria-labelledby]="'caption-'+index">
+      </picture>
+        
+      <figcaption class="caption" [id]="'caption-'+index">
+        {{ title }}
+      </figcaption>
+
+        <div class="card-bg"></div>
+    </figure>
+
+  </div>

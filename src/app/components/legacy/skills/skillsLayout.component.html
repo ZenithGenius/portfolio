@@ -1,0 +1,26 @@
+<section class="container-sections">
+  <div data-aos="fade-up" data-aos-duration="700">
+    <app-title
+      className="w-full text-center font-bold"
+      [titleID]="titleID"
+      class="title-large"
+      [name]="SKILLS.TITLE_COMPLETE"
+    >
+      {{ SKILLS.TITLE[0] }}
+      <span class="bg-ml-text-red bg-clip-text text-transparent">{{
+        SKILLS.TITLE[1]
+      }}</span>
+      {{ SKILLS.TITLE[2] }}
+    </app-title>
+
+    <div class="w-full flex items-center justify-center">
+      <h3 class="clarification">
+        <span class="text-center">{{ SKILLS.CLARIFICATION }}</span>
+      </h3>
+    </div>
+  </div>
+
+  <div class="flex flex-wrap xl:flex-nowrap mx-8 md:mx-32">
+    <skills-group></skills-group>
+  </div>
+</section>

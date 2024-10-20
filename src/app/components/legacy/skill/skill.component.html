@@ -1,0 +1,23 @@
+<figure class="technology">
+  <picture class="shadow-skiil hover:!opacity-100">
+    <img
+      [ngSrc]="icon"
+      [width]="size"
+      [height]="size"
+      alt="technology logo"
+      role="img"
+      itemprop="image"
+      [title]="caption"
+      [attr.aria-labelledby]="caption"
+      [ngClass]="{
+        'spring-size': caption === 'Spring',
+        'jira-size': caption === 'Jira',
+        'postman-size': caption === 'Postman',
+        'doscker-size': caption === 'Docker',
+        'java-size': caption === 'Java',
+        'angular-size': caption === 'Angular'
+      }"
+    />
+  </picture>
+  <figcaption [id]="caption">{{ caption }}</figcaption>
+</figure>

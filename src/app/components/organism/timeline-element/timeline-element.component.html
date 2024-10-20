@@ -1,0 +1,67 @@
+<li
+  class="time-element-container text-light"
+  [ngClass]="
+    cardDirection() === DIRECTION.LEFT ? 'left-container' : 'right-container'
+  "
+  data-aos="fade-up"
+  data-aos-duration="300"
+  data-aos-offset="100"
+  data-aos-anchor-placement="top-bottom"
+>
+  <svg
+    aria-hidden="true"
+    class="-rotate-90 md:w-[60px] md:h-[60px] xs:w-[40px] xs:h-[40px]"
+    width="75"
+    height="75"
+    viewBox="0 0 100 100"
+    role="img"
+    aria-hidden="true"
+  >
+    <circle
+      cx="75"
+      cy="50"
+      r="20"
+      pathLength="1"
+      class="stroke-primary stroke-1 fill-none"
+    ></circle>
+    <circle
+      cx="75"
+      cy="50"
+      r="20"
+      pathLength="1"
+      class="stroke-[5px] dark:fill-dark"
+      stroke-dashoffset="0px"
+      stroke-dasharray="0px 1px"
+    ></circle>
+    <circle
+      cx="75"
+      cy="50"
+      r="10"
+      pathLength="1"
+      class="animate-pulse stroke-1 fill-primary"
+    ></circle>
+  </svg>
+  <div
+    class="text-box"
+    data-aos="zoom-in-right"
+    data-aos-duration="500"
+    data-aos-offset="100"
+    data-aos-anchor-placement="top-bottom"
+  >
+    <h3 class="font-bold text-2xl max-[330px]:text-base sm:text-xl xs:text-lg">
+      {{ title() }}
+    </h3>
+
+    <small class="inline-block mb-4 text-gray-400">{{ state() }}</small>
+
+    <p>{{ description() }}</p>
+
+    <span
+      [ngClass]="
+        cardDirection() === DIRECTION.LEFT
+          ? 'left-container-arrow'
+          : 'right-container-arrow'
+      "
+    ></span>
+  </div>
+</li>

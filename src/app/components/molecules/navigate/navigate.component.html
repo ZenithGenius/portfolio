@@ -1,0 +1,12 @@
+<router-link
+  [classNames]="classNames()"
+  [path]="path()"
+  [fragment]="fragment()"
+>
+  <ng-content></ng-content>
+  <span
+    class="h-[2px] inline-block bg-violet-900 absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300"
+  >
+    &nbsp;
+  </span>
+</router-link>

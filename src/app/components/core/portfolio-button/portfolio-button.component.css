@@ -1,0 +1,56 @@
+.portfolio-button {
+  --pfl-btn-border-color: rgba(44, 5, 107, 0.45);
+  --pfl-bg-opacity: 1;
+
+  position: relative;
+  -webkit-tap-highlight-color: transparent;
+  appearance: none;
+  overflow: hidden;
+
+  border: 3px solid;
+  border-color: var(--pfl-btn-border-color);
+  border-radius: 1.25rem;
+  box-shadow:
+    inset -1px -6px 16px rgba(35, 0, 70, 0.25),
+    inset 6px 8px 24px rgba(30, 0, 60, 0.83);
+  font-weight: 600;
+  color: #f5ebeb;
+
+  @media (hover: hover) and (pointer: fine) {
+    &:hover:not(:disabled) {
+      cursor: pointer;
+    }
+  }
+
+  &:active:not(:disabled) {
+    --pfl-btn-border-color: rgba(44, 5, 107, 0.85);
+    --pfl-bg-opacity: 0.8;
+  }
+}
+
+.pfl-btn-pattern {
+  background: rgba(44, 5, 107, 0.6);
+  height: 100%;
+  width: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+.pfl-btn-bg {
+  position: relative;
+  width: 170%;
+  height: 170%;
+  background-image: url("/bg2.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.pfl-btn-target {
+  --x: 0;
+  --y: 0;
+
+  transform: translate(var(--x), var(--y));
+  opacity: var(--pfl-bg-opacity);
+}

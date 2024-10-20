@@ -1,0 +1,113 @@
+rectangle-profile {
+  min-width: 135px;
+  max-height: 150px;
+
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 28%;
+
+  &::ng-deep img {
+    width: 150px;
+    height: 160px !important;
+  }
+
+  @media only screen and (min-width: 440px) {
+    & {
+      position: relative;
+      inset: 0;
+      transform: none;
+    }
+    &::ng-deep img {
+      width: 135px;
+      height: 100% !important;
+    }
+  }
+}
+#bento-item-profile {
+  height: auto;
+}
+
+::ng-deep .bento-item-3 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.3rem;
+  --astronaut-right: 10%;
+  --name-size: 2.5rem;
+  --name-h: 50px;
+}
+
+::ng-deep .bento-item-3 ::ng-deep #astronaut {
+  position: absolute;
+  display: none;
+  z-index: 5;
+  right: var(--astronaut-right);
+  top: 0px;
+}
+
+h2 {
+  font-weight: 700;
+  line-height: var(--name-h);
+  background-image: var(--ml-text-white);
+  position: absolute;
+  bottom: 4%;
+  left: 10%;
+  width: 90%;
+  max-width: none;
+  font-size: clamp(1.25rem, 9dvw, 2.75rem);
+
+  @media only screen and (min-width: 440px) {
+    & {
+      width: 100%;
+      position: relative;
+      inset: 0;
+      max-width: 200px;
+      font-size: var(--name-size);
+    }
+  }
+}
+
+text-with-icon {
+  display: inline-flex;
+}
+
+a.resume-download {
+  outline: none;
+  cursor: pointer;
+
+  &:has(:focus, :hover, :active) {
+    outline: none;
+  }
+}
+
+@media only screen and (min-width: 580px) {
+  ::ng-deep .bento-item-3 ::ng-deep #astronaut {
+    display: block;
+    --name-size: 2.75rem;
+  }
+  bento-item {
+    height: -webkit-fill-available;
+  }
+}
+
+@media only screen and (min-width: 840px) {
+  ::ng-deep .bento-item-3 {
+    --name-size: 3.15rem;
+    --name-h: 60px;
+  }
+  ::ng-deep .bento-item-3 ::ng-deep #astronaut {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1290px) {
+  ::ng-deep .bento-item-3 ::ng-deep #astronaut {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 1480px) {
+  ::ng-deep .bento-item-3 {
+    --astronaut-right: 16%;
+  }
+}

@@ -1,0 +1,47 @@
+.arrow {
+  position: absolute;
+  left: 50%;
+  bottom: -155%;
+  transform: translate(-50%, 0%);
+  scale: 0.8;
+
+  #BOT-ARROW {
+    --start-anim-y: 0%;
+    --percentage-anim-x: 0%;
+    --percentage-anim-y: 60%;
+    --scale-anim: 0.64;
+    animation: bot-top-fortop 1.7s ease 100ms infinite alternate forwards;
+  }
+
+  #MID-ARROW {
+    --start-anim-y: 0%;
+    --percentage-anim-x: -1%;
+    --percentage-anim-y: 55%;
+    --scale-anim: 0.64;
+    animation: bot-top-fortop 1.7s ease 140ms infinite alternate forwards;
+  }
+  #TOP-ARROW {
+    --start-anim-y: 0%;
+    --percentage-anim-x: 1%;
+    --percentage-anim-y: 52%;
+    --scale-anim: 0.59;
+    animation: bot-top-fortop 1.7s ease 180ms infinite alternate forwards;
+  }
+}
+
+@keyframes bot-top-fortop {
+  to {
+    transform: translate(0%, var(--start-anim-y));
+    scale: 0.55;
+  }
+  from {
+    transform: translate(var(--percentage-anim-x), var(--percentage-anim-y));
+    scale: var(--scale-anim);
+  }
+}
+
+@media only screen and (min-width: 690px) {
+  .arrow {
+    bottom: -125%;
+  }
+}

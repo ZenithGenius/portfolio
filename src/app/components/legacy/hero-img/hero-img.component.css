@@ -1,0 +1,16 @@
+.img-container {
+  width: 95%;
+  height: auto;
+}
+
+.img-container picture img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
+
+@media screen and (min-width: 1700px) {
+  .img-container {
+    width: calc(500px + 19dvh);
+    height: calc(500px + 20dvh);
+  }
+}

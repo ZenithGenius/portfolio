@@ -1,0 +1,53 @@
+<bento-item id="bento-item-profile" className="bento-col-2 bento-item-3">
+  <div class="flex gap-x-[1rem] min-[840px]:gap-x-[1.35rem]">
+    <rectangle-profile [src]="PROFILE.photo" alt="My photo" />
+    <div class="flex flex-col w-full">
+      <div
+        class="flex items-start gap-y-3 mb-2 min-[540px]:mb-0 flex-col min-[540px]:flex-row min-[540px]:justify-between min-[540px]:items-center"
+      >
+        <span class="space-in-text">
+          <pulse-element />
+          {{ PROFILE.isAvalaible ? "Available for work" : "Not available" }}
+        </span>
+        <a
+          [href]="USER.downloadCv"
+          target="_blank"
+          class="resume-download space-in-text cursor-pointer flex-row-reverse min-[540px]:flex-row pointer"
+        >
+          <span>Resume</span> <DownloadIcon />
+        </a>
+      </div>
+      <h2 class="bg-clip-text text-transparent">{{ USER.fullName }}</h2>
+    </div>
+    <AstronautIcon />
+  </div>
+  <div
+    class="flex-row flex-wrap gap-x-3 gap-y-[.7rem] min-[680px]:gap-x-4 mt-4 hidden min-[440px]:flex min-[840px]:mt-auto"
+  >
+    <div
+      class="chip-style flex flex-row px-3 py-2 gap-x-[.3rem] min-[680px]:gap-x-2"
+    >
+      <CountryIcon /> {{ PROFILE.country }}
+    </div>
+    <div
+      class="chip-style flex flex-row px-3 py-2 gap-x-[.3rem] min-[680px]:gap-x-2"
+    >
+      <EducationIcon /> {{ PROFILE.qualification }}
+    </div>
+    <div
+      class="chip-style flex flex-row px-3 py-2 gap-x-[.3rem] min-[680px]:gap-x-2"
+    >
+      <GlobalIcon /> {{ PROFILE.idioms }}
+    </div>
+    <div
+      class="chip-style flex flex-row px-3 py-2 gap-x-[.3rem] min-[680px]:gap-x-2"
+    >
+      <GoodBoyIcon /> {{ PROFILE.complement }}
+    </div>
+    <div
+      class="chip-style flex flex-row px-3 py-2 gap-x-[.3rem] min-[680px]:gap-x-2"
+    >
+      <CoffeeIcon /> I love a coffee
+    </div>
+  </div>
+</bento-item>

@@ -1,0 +1,50 @@
+<form
+  class="form"
+  [formGroup]="contactForm"
+  (submit)="onSubmit()"
+  role="form"
+  aria-label="Contact Form"
+>
+  <app-input-field
+    type="text"
+    name="name"
+    formControlName="name"
+    id="contact-name"
+    autocomplete="name"
+    label="Name"
+    aria="Write your name."
+    errorMessage="Please enter a valid name."
+  ></app-input-field>
+
+  <app-input-field
+    type="email"
+    name="email"
+    formControlName="email"
+    id="contact-email"
+    autocomplete="email"
+    label="Email"
+    aria="Write your email."
+    errorMessage="Please enter a valid email."
+  ></app-input-field>
+
+  <app-textarea-field
+    name="message"
+    formControlName="message"
+    id="contact-message"
+    label="Write your message..."
+    aria="Write your message."
+    errorMessage="Please enter a valid message (there is a 300 character limit)."
+    cols="20"
+    rows="7"
+  ></app-textarea-field>
+
+  <button
+    class="button-form"
+    type="submit"
+    role="button"
+    [disabled]="contactForm.invalid"
+    [attr.aria-disabled]="contactForm.invalid"
+  >
+    Send
+  </button>
+</form>
