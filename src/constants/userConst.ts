@@ -2,17 +2,17 @@ import type { BentoUser, User } from '@app/models/types';
 
 // General user data
 export const USER: User = {
-  name: 'Benny',
+  name: 'BENNY',
   lastname: 'Jason',
-  fullName: 'Benny Joumessi Jason',
+  fullName: 'BENNY JOUMESSI Jason',
   email: 'joumessiisaac@gmail.com',
   motto: 'The Geeks shall inherit the properties of object Earth.',
-  role: 'Cyber Security Analyst / Red Teamer',
-  cv: 'https://drive.google.com/file/d/1QtjzEwzcggXj6jC5l4a7zrKr_AN_9Q83/view?usp=sharing',
+  role: 'Cyber Security Expert / Red Teamer',
+  cv: 'https://drive.google.com/file/d/1BUQiyf7C-8_0szNbREscJSR2yWleGpHU/view',
   linkedIn: 'https://www.linkedin.com/in/joumessi-isaac/',
   gitHub: 'https://github.com/ZenithGenius',
   stackOverflow: '#',
-  downloadCv: 'https://drive.usercontent.google.com/u/0/uc?id=1QtjzEwzcggXj6jC5l4a7zrKr_AN_9Q83&export=download',
+  downloadCv: 'https://drive.usercontent.google.com/u/0/uc?id=1BUQiyf7C-8_0szNbREscJSR2yWleGpHU&export=download',
 };
 
 // User data to complete the about bento
@@ -22,16 +22,16 @@ export const ABOUT_USER: BentoUser = {
     {
       ID: '1-exp',
       COMPANY: 'ITSC Sarl',
-      ROLE: 'Cyber Security Analyst / Red Teamer',
-      TIME: 'March 2023 - Present',
+      ROLE: 'Red Teamer',
+      TIME: 'March 2024 - Aout 2024',
       DESCRIPTION:
         'Worked on constructing high-density networks (Switches, Routers, Firewalls) and setting up security systems (SIEM, IDPS). Conducted regular security audits and created command and control (C2) infrastructures for penetration testing.',
     },
     {
       ID: '2-exp',
       COMPANY: 'Personal Project',
-      ROLE: 'AI and Automation Developer',
-      TIME: '2022',
+      ROLE: 'AI Automation and Python Developer',
+      TIME: '2024',
       DESCRIPTION:
         'Integrated AI into drones and developed autonomous recycling bins using microcontrollers for automation purposes. This project enhanced my skills in electronics and artificial intelligence integration.',
     },
@@ -47,13 +47,13 @@ export const ABOUT_USER: BentoUser = {
       ID: '4-exp',
       COMPANY: 'ITSC Sarl',
       ROLE: 'Linux Systems Administrator',
-      TIME: '2021 - 2022',
+      TIME: '2024',
       DESCRIPTION:
         'Managed and maintained Linux servers, handled firewall configurations, and provided solutions for cybersecurity incidents while maintaining system integrity.',
     },
     {
       ID: '5-exp',
-      COMPANY: 'ITSC Sarl',
+      COMPANY: 'Tellus Energy Company',
       ROLE: 'Penetration Testing Specialist',
       TIME: '2021',
       DESCRIPTION:
@@ -63,7 +63,7 @@ export const ABOUT_USER: BentoUser = {
       ID: '6-exp',
       COMPANY: 'University Projects',
       ROLE: 'Full Stack Developer',
-      TIME: '2020 - 2021',
+      TIME: '2023',
       DESCRIPTION:
         'Worked on multiple projects developing web and mobile applications using React, Java, and Python, focusing on user interfaces and backend services.',
     },
@@ -77,14 +77,6 @@ export const ABOUT_USER: BentoUser = {
     },
     {
       ID: '8-exp',
-      COMPANY: 'ITSC Sarl',
-      ROLE: 'Red Team Intern',
-      TIME: '2020',
-      DESCRIPTION:
-        'Supported the Red Team by setting up attack simulations, developing strategies for security improvements, and helping with penetration testing efforts.',
-    },
-    {
-      ID: '9-exp',
       COMPANY: 'Personal Project',
       ROLE: 'Kernel Developer',
       TIME: '2021',
@@ -92,7 +84,7 @@ export const ABOUT_USER: BentoUser = {
         'Developed a custom Linux kernel for security-focused environments, improving system performance and security configurations.',
     },
     {
-      ID: '10-exp',
+      ID: '9-exp',
       COMPANY: 'Freelance',
       ROLE: 'Network Security Consultant',
       TIME: '2021 - Present',
@@ -112,7 +104,7 @@ export const ABOUT_USER: BentoUser = {
     complement: 'A hard worker',
   },
   whoIam:
-    'Cybersecurity expert and ethical hacker with a passion for solving challenges, including Capture The Flag (CTF) competitions on platforms like TryHackMe and VulnHub. Proficient in setting up command and control infrastructures, managing high-density networks, and implementing security solutions such as IDPS and SIEM systems like Wazuh. Experienced in Linux server management, Active Directory, and kernel development. I have a strong background in cybersecurity training, including boot camps on threat detection and prevention using MITRE ATT&CK, as well as certifications in ethical hacking and Fortinet. Additionally, I have expertise in front-end development with ReactJS and back-end development with Python and Java, along with mobile and desktop app development using Flutter. My work also extends to integrating AI into drones and automating processes with microcontrollers.',
+    'Cybersecurity expert and ethical hacker with a passion for solving CTF challenges. Proficient in setting up command and control infrastructures, managing high-density networks, and implementing security solutions such as IDPS and SIEM systems. Experienced in Linux server management, Active Directory, and kernel development. I have a strong background in cyber threat intelligence (CTI), expertise in front-end development with ReactJS and AngularJS, back-end development with Python and Java, along with mobile and desktop app development using Flutter. My work also extends to integrating AI into drones and automating processes with microcontrollers.',
   studies: [
     {
       ID: 'b00fb15c9503',
